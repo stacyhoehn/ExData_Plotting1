@@ -10,7 +10,7 @@ mergedDateTime <- as.POSIXct(paste(Date, Time), format="%d/%m/%Y %H:%M:%S")
 
 #create the desired plot of date/time vs sub_metering values
 png("plot3.png",width=480,height=480,units="px")
-plot(mergedDateTime,Sub_metering_1,col="black",pch=0,type="l",xlab="",ylab="Energy sub metering")
+plot(mergedDateTime,Sub_metering_1,col="black",type="l",xlab="",ylab="Energy sub metering")
 lines(mergedDateTime,Sub_metering_2,col="red")
 lines(mergedDateTime,Sub_metering_3,col="blue")
 legend("topright",col=c("black","red","blue"),lty=c(1,1,1),legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),cex=.8)

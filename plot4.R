@@ -13,7 +13,7 @@ png("plot4.png",width=480,height=480,units="px")
 par(mfrow=c(2,2))
 
 #plot 1
-plot(mergedDateTime,Global_active_power,lwd=1,pch=0,type="l",xlab="",ylab="Global Active Power")
+plot(mergedDateTime,Global_active_power,lwd=1,type="l",xlab="",ylab="Global Active Power")
 #plot 2
 plot(mergedDateTime,Voltage,lwd=1,pch=0,type="l",xlab="datetime",ylab="Voltage")
 #plot 3
